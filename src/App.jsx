@@ -6,6 +6,9 @@ import Orderdetails from "./components/orderdetails";
 import Mealplaning from "./components/mealplaning";
 import Recipe from "./components/Recipe";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Dinein from "./components/Dinein";
+import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="/ordertrack" element={<Orderdetails />} />
         <Route path="/Mealplanning" element={<Mealplaning/>}/>
         <Route path="/recipe" element={<Recipe/>}/>
+        <Route path="/dinein" element={<Dinein/>} />
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
       </Routes>
     </Router>
   );
