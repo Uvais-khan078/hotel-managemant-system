@@ -20,7 +20,7 @@ export default function Login() {
         
         if (data.message === "Login successful!") {
             localStorage.setItem("user", JSON.stringify(data.user));
-            navigate("/dashboard");
+            navigate("/menu");
         }
     };
 
